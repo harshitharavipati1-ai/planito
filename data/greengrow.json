@@ -1,0 +1,322 @@
+{
+  "users": [
+    {
+      "id": "usr_farmer1",
+      "name": "Ramesh Patel",
+      "email": "ramesh.farmer@greengrow.ai",
+      "role": "FARMER",
+      "location": "Guntur, Andhra Pradesh",
+      "farmSizeAcres": 5.5
+    },
+    {
+      "id": "usr_citizen1",
+      "name": "Ananya Sharma",
+      "email": "ananya.citizen@greengrow.ai",
+      "role": "CITIZEN",
+      "location": "Hyderabad, Telangana"
+    },
+    {
+      "id": "usr_officer1",
+      "name": "Dr. V. K. Rao",
+      "email": "vk.rao@agri.gov.in",
+      "role": "OFFICER",
+      "location": "Vijayawada Region"
+    },
+    {
+      "id": "usr_admin1",
+      "name": "System Admin",
+      "email": "admin@greengrow.ai",
+      "role": "ADMIN",
+      "location": "HQ Central"
+    }
+  ],
+  "plants": [
+    {
+      "id": "plt_1785451493479",
+      "userId": "usr_farmer1",
+      "plantName": "Rice",
+      "species": "Oryza sativa",
+      "growthStage": "Vegetative",
+      "healthScore": 94,
+      "diseaseName": "Healthy / None",
+      "pestDetected": "None",
+      "confidenceScore": 96,
+      "imageUrl": "https://images.unsplash.com/photo-1592841200221-a6898f307baa?auto=format&fit=crop&w=800&q=80",
+      "location": "Guntur Field",
+      "soilType": "Red Loam",
+      "createdAt": "2026-07-30T22:44:53.479Z",
+      "recommendations": {
+        "bestSoil": "Clay Loam or Clay Silt with high water retention capacity",
+        "waterReqLitersPerDay": 25,
+        "minWaterNeededLiters": 18,
+        "fertilizerType": "NPK 120:60:60 split application with Zinc Sulfate",
+        "minFertilizerKgPerAcre": 45,
+        "organicAlternative": "Farmyard Manure (FYM), Neem Cake, and Azospirillum bio-fertilizer",
+        "optimalIrrigationTime": "Early Morning",
+        "diseasePrevention": "Adopt Alternate Wetting and Drying (AWD) to reduce fungal risk and maintain root health.",
+        "nutrientAdvice": "Apply Nitrogen in split doses at active tillering and panicle initiation stages.",
+        "explanation": "Field shows excellent canopy greenness and tillering density with no visible signs of pest infestation or disease spots."
+      },
+      "predictions": {
+        "daysToHarvest": 80,
+        "estimatedYieldKgPerAcre": 2400,
+        "harvestDate": "2025-05-30",
+        "diseaseRiskLevel": "Low",
+        "nutrientDeficiencyRisk": "Low",
+        "waterStressRiskLevel": "Low",
+        "growthProjectionSummary": "Crop development is optimal. Strong vegetative tillering ensures high potential yield at harvest."
+      }
+    },
+    {
+      "id": "plt_1785451318411",
+      "userId": "usr_farmer1",
+      "plantName": "Maize",
+      "species": "Zea mays",
+      "growthStage": "Fruiting",
+      "healthScore": 30,
+      "diseaseName": "Fusarium Ear Rot",
+      "pestDetected": "Corn Earworm",
+      "confidenceScore": 92,
+      "imageUrl": "data:image/jpeg;base64,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",
+      "location": "Guntur Field Sector A",
+      "soilType": "Red Loam Soil",
+      "createdAt": "2026-07-30T22:41:58.411Z",
+      "recommendations": {
+        "bestSoil": "Well-drained Red Loam Soil with high organic content",
+        "waterReqLitersPerDay": 12.5,
+        "minWaterNeededLiters": 8,
+        "fertilizerType": "Potassium-rich NPK blend to strengthen stalk and ear structural immunity",
+        "minFertilizerKgPerAcre": 35,
+        "organicAlternative": "Bio-fungicide Trichoderma viride seed treatment and foliar Neem oil spray for earworm management",
+        "optimalIrrigationTime": "Early Morning",
+        "diseasePrevention": "Destroy infected cobs after harvest, practice crop rotation with non-host legumes, and choose insect-resistant corn hybrids.",
+        "nutrientAdvice": "Avoid late-season excessive Nitrogen application, which promotes fungal proliferation; balance with adequate Potassium and Zinc.",
+        "explanation": "The cob exhibits severe white cottony mold growth typical of Fusarium Ear Rot, which often develops following insect damage at the ear tip during high humidity."
+      },
+      "predictions": {
+        "daysToHarvest": 14,
+        "estimatedYieldKgPerAcre": 1400,
+        "harvestDate": "2025-04-10",
+        "diseaseRiskLevel": "High",
+        "nutrientDeficiencyRisk": "Potassium Deficiency",
+        "waterStressRiskLevel": "Medium",
+        "growthProjectionSummary": "Infection has compromised ear tip quality. Timely harvesting and immediate grain drying below 15% moisture are critical to prevent mycotoxin spread."
+      }
+    },
+    {
+      "id": "plt_101",
+      "userId": "usr_farmer1",
+      "plantName": "Tomato - Hybrid Roma",
+      "species": "Solanum lycopersicum",
+      "growthStage": "Flowering",
+      "healthScore": 88,
+      "diseaseName": "Early Blight (Initial)",
+      "pestDetected": "Whiteflies (Low severity)",
+      "confidenceScore": 94,
+      "imageUrl": "/tomato_early_blight.jpg",
+      "location": "Field Sector A2, Guntur",
+      "soilType": "Red Loam Soil (pH 6.5)",
+      "createdAt": "2026-07-30T14:15:21.846Z",
+      "recommendations": {
+        "bestSoil": "Well-draining Red Loamic soil, pH 6.2 - 6.8",
+        "waterReqLitersPerDay": 18,
+        "minWaterNeededLiters": 12,
+        "fertilizerType": "NPK 19-19-19 + Calcium Nitrate",
+        "minFertilizerKgPerAcre": 4.5,
+        "organicAlternative": "Neem Cake (50kg/acre) + Vermicompost spray",
+        "optimalIrrigationTime": "Early Morning (6:00 AM - 7:30 AM)",
+        "diseasePrevention": "Apply Copper Oxychloride 3g/L or Neem Oil 5ml/L spray every 10 days.",
+        "nutrientAdvice": "Magnesium and Micronutrient spray needed during flowering to prevent leaf drop.",
+        "explanation": "Early blight fungal spores detected on lower leaves due to recent humidity. Targeted organic neem oil spray coupled with controlled drip irrigation prevents spore proliferation while preserving soil microbes."
+      },
+      "predictions": {
+        "daysToHarvest": 38,
+        "estimatedYieldKgPerAcre": 4200,
+        "harvestDate": "2026-09-06",
+        "diseaseRiskLevel": "Medium",
+        "nutrientDeficiencyRisk": "Nitrogen & Calcium deficiency if rainy",
+        "waterStressRiskLevel": "Low",
+        "growthProjectionSummary": "Plant is progressing steadily toward fruiting. High yield potential if fungal leaf spots are managed now."
+      }
+    },
+    {
+      "id": "plt_102",
+      "userId": "usr_farmer1",
+      "plantName": "Paddy Rice - Sona Masoori",
+      "species": "Oryza sativa",
+      "growthStage": "Tillering",
+      "healthScore": 95,
+      "diseaseName": "None (Healthy)",
+      "pestDetected": "None",
+      "confidenceScore": 98,
+      "imageUrl": "/healthy_paddy_rice.jpg",
+      "location": "Wetland Sector B",
+      "soilType": "Clayey Alluvial Soil",
+      "createdAt": "2026-07-27T14:15:21.846Z",
+      "recommendations": {
+        "bestSoil": "Heavy Clay soil with high water retention capacity",
+        "waterReqLitersPerDay": 45,
+        "minWaterNeededLiters": 32,
+        "fertilizerType": "Urea (split dosage) + Zinc Sulfate",
+        "minFertilizerKgPerAcre": 8,
+        "organicAlternative": "Azolla Biofertilizer & Green Manure Incorporation",
+        "optimalIrrigationTime": "Alternate Wetting and Drying (AWD) cycle",
+        "diseasePrevention": "Maintain proper field drainage during tillering phase.",
+        "nutrientAdvice": "Apply Zinc Sulfate @ 10kg/acre to prevent Khaira disease.",
+        "explanation": "AWD irrigation saves up to 35% water without reducing yield. Crop is extremely healthy."
+      },
+      "predictions": {
+        "daysToHarvest": 72,
+        "estimatedYieldKgPerAcre": 5800,
+        "harvestDate": "2026-10-10",
+        "diseaseRiskLevel": "Low",
+        "nutrientDeficiencyRisk": "Zinc deficiency risk in submerged soil",
+        "waterStressRiskLevel": "Low",
+        "growthProjectionSummary": "Tillering rate is optimal. AWD regime recommended for water conservation."
+      }
+    }
+  ],
+  "carePlans": [
+    {
+      "id": "tsk_1",
+      "dayNumber": 1,
+      "dateStr": "2026-07-30",
+      "taskTitle": "Morning Drip Irrigation (15L)",
+      "category": "IRRIGATION",
+      "completed": false,
+      "priority": "HIGH",
+      "instructions": "Operate drip valves for 35 mins at 6:00 AM to minimize surface evaporation."
+    },
+    {
+      "id": "tsk_2",
+      "dayNumber": 2,
+      "dateStr": "2026-07-31",
+      "taskTitle": "Foliar Neem Oil Spray (5ml/L)",
+      "category": "PEST_CONTROL",
+      "completed": false,
+      "priority": "HIGH",
+      "instructions": "Spray under leaves at sunset to prevent aphid and whitefly egg laying."
+    },
+    {
+      "id": "tsk_3",
+      "dayNumber": 3,
+      "dateStr": "2026-08-01",
+      "taskTitle": "Soil Moisture & pH Check",
+      "category": "SOIL_CARE",
+      "completed": false,
+      "priority": "MEDIUM",
+      "instructions": "Verify root zone moisture is above 55%. Soil pH target 6.5."
+    },
+    {
+      "id": "tsk_4",
+      "dayNumber": 4,
+      "dateStr": "2026-08-02",
+      "taskTitle": "Vermicompost Application (2kg/plant)",
+      "category": "FERTILIZER",
+      "completed": false,
+      "priority": "HIGH",
+      "instructions": "Apply organic compost around drip line perimeter and lightly rake into topsoil."
+    },
+    {
+      "id": "tsk_5",
+      "dayNumber": 5,
+      "dateStr": "2026-08-03",
+      "taskTitle": "Prune Lower Diseased Leaves",
+      "category": "INSPECTION",
+      "completed": false,
+      "priority": "MEDIUM",
+      "instructions": "Remove any yellowed or brown-spotted bottom leaves up to 10cm off ground."
+    },
+    {
+      "id": "tsk_6",
+      "dayNumber": 6,
+      "dateStr": "2026-08-04",
+      "taskTitle": "Drain Field for AWD Rice Protocol",
+      "category": "IRRIGATION",
+      "completed": false,
+      "priority": "MEDIUM",
+      "instructions": "Allow surface water to recede to 5cm below soil surface to stimulate root oxygenation."
+    },
+    {
+      "id": "tsk_7",
+      "dayNumber": 7,
+      "dateStr": "2026-08-05",
+      "taskTitle": "Weekly Yield & Health Assessment",
+      "category": "INSPECTION",
+      "completed": false,
+      "priority": "LOW",
+      "instructions": "Upload photo to GreenGrow AI for updated health & harvest score."
+    }
+  ],
+  "citizenReports": [
+    {
+      "id": "tree_1",
+      "userId": "usr_citizen1",
+      "userName": "Ananya Sharma",
+      "title": "Aged Neem Tree needing branch trimming & root care",
+      "treeSpecies": "Azadirachta indica (Neem)",
+      "location": "Jubilee Hills Circle 3, Hyderabad",
+      "lat": 17.4326,
+      "lng": 78.4071,
+      "imageUrl": "https://images.unsplash.com/photo-1542273917363-3b1817f69a2d?auto=format&fit=crop&w=800&q=80",
+      "healthStatus": "Needs Care",
+      "description": "Large public neem tree showing dried outer branches and soil compaction near pavement.",
+      "reportedAt": "2026-07-28T14:15:21.846Z",
+      "status": "IN_REVIEW"
+    },
+    {
+      "id": "tree_2",
+      "userId": "usr_citizen1",
+      "userName": "Ravi Kumar",
+      "title": "Newly Planted Mango Sapling Community Park",
+      "treeSpecies": "Mangifera indica (Mango)",
+      "location": "Kukatpally Green Park, Hyderabad",
+      "lat": 17.4948,
+      "lng": 78.3996,
+      "imageUrl": "https://images.unsplash.com/photo-1513836279014-a89f7a76ae86?auto=format&fit=crop&w=800&q=80",
+      "healthStatus": "Healthy",
+      "description": "Community planted sapling growing well. Drip watering system setup.",
+      "reportedAt": "2026-07-25T14:15:21.846Z",
+      "status": "RESOLVED"
+    }
+  ],
+  "alerts": [
+    {
+      "id": "alt_1785451493480",
+      "title": "Disease Alert: Healthy / None",
+      "message": "Detected on Rice with 96% confidence. Action recommended: Adopt Alternate Wetting and Drying (AWD) to reduce fungal risk and maintain root health.",
+      "severity": "MEDIUM",
+      "category": "DISEASE",
+      "createdAt": "2026-07-30T22:44:53.480Z",
+      "read": false
+    },
+    {
+      "id": "alt_1785451318411",
+      "title": "Disease Alert: Fusarium Ear Rot",
+      "message": "Detected on Maize with 92% confidence. Action recommended: Destroy infected cobs after harvest, practice crop rotation with non-host legumes, and choose insect-resistant corn hybrids.",
+      "severity": "HIGH",
+      "category": "DISEASE",
+      "createdAt": "2026-07-30T22:41:58.411Z",
+      "read": false
+    },
+    {
+      "id": "alt_1",
+      "title": "High Humidity Weather Alert",
+      "message": "Expected humidity > 82% over Guntur region. High risk of Fungal Leaf Spot on Tomatoes.",
+      "severity": "HIGH",
+      "category": "DISEASE",
+      "createdAt": "2026-07-30T14:15:21.846Z",
+      "read": false
+    },
+    {
+      "id": "alt_2",
+      "title": "Watering Reminder: Alternate Wetting Cycle",
+      "message": "Paddy Sector B requires drain-and-dry inspection today under AWD protocol.",
+      "severity": "MEDIUM",
+      "category": "WATER",
+      "createdAt": "2026-07-30T02:15:21.846Z",
+      "read": false
+    }
+  ],
+  "chatHistory": []
+}
